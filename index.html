@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue calculadora</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="calculator">
+      <input type="text" v-model="equation" readonly>
+      <button v-on:click="addInput(1)" id="one">1</button>
+      <button v-on:click="addInput(2)" id="two">2</button>
+      <button v-on:click="addInput(3)" id="three">3</button>
+      <button v-on:click="addInput(4)" id="four">4</button>
+      <button v-on:click="addInput(5)" id="five">5</button>
+      <button v-on:click="addInput(6)" id="six">6</button>
+      <button v-on:click="addInput(7)" id="seven">7</button>
+      <button v-on:click="addInput(8)" id="eight">8</button>
+      <button v-on:click="addInput(9)" id="nine">9</button>
+      <button v-on:click="addInput(0)" id="zero">0</button>
+      <button v-on:click="doEquation()" id="equal">=</button>
+      <button v-on:click="addInput('+')" id="plus">+</button>
+      <button v-on:click="addInput('-')" id="minus">-</button>
+      <button v-on:click="addInput('*')" id="times">*</button>
+      <button v-on:click="addInput('/')" id="divide">/</button>
+      <button v-on:click="addInput('.')" id="dot">.</button>
+      <button v-on:click="clearInput()" id="clear">AC</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

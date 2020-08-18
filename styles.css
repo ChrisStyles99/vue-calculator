@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#app {
+  height: 100vh;
+  width: 100vh;
+}
+
+.calculator {
+  position: relative;
+  margin: auto;
+  display: grid;
+  width: 50%;
+  height: 50vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  top: 40px;
+}
+
+.calculator input {
+  width: 100%;
+  grid-column: span 4;
+  font-size: 2rem;
+  color: #7af5f1;
+  background-color: #000;
+  border: none;
+}
+
+.calculator button {
+  background-color: #262626;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+}
+
+#four {
+  grid-row: 3;
+}
+
+#five {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+#six {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+#seven {
+  grid-row: 4;
+}
+
+#eight {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+#nine {
+  grid-row: 4;
+  grid-column: 3;
+}
+
+#dot {
+  grid-row: 5;
+}
+
+#zero {
+  grid-row: 5;
+  grid-column: 2;
+}
+
+#plus {
+  grid-row: 5;
+  grid-column: 3 / span 2;
+}
+
+#clear {
+  grid-row: 6;
+  grid-column: span 2;
+}
+
+#equal {
+  grid-row: 6;
+  grid-column: 3 / span 2;
+}
+
+#divide {
+  grid-row: 2;
+  grid-column: 4;
+}
